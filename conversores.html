@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = " en " >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <meta http-equiv = " X-UA-Compatible " content = " ie = edge " >
+    <title>Conversores</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a href=""class="navbar-brand">
+                <p class="lead">Conversores</p>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+        <div class="mt-5">
+            <div class="d-flex justify-content-center">
+                <div class="form-group col-4">
+
+                          
+    </main>
+    <form  method = " post " id = " frmConversores " >
+        <div class = " container " >
+            <div  class = " row row-cols-2 " >
+                
+                </div >
+            </div >
+            <div  class = " row row-cols-4 p-2 " >
+                <div  class = " col " >
+                    Seleccione un conversor:
+                    <select  id = " cboConvertir " class = " form-control " onchange = " seleccionar_opcion () " >
+                        <option  value = " seleccion " > Seleccionar </option >
+                        <option  value = "Moneda" > Moneda </option >
+                        <option  value = "Unidades" > Longitud </option >
+                    </select >
+                </div >
+            </div >
+            <div  class = " row row-cols-4 p-2 " >
+                <div  class = " col " >
+                    DE:
+                    <select  id = " CboDe " class = " form-control " onchange="Seleccione_De()" >
+                        <option value="Dolares">Dolares</option>
+                        <option value="Colones (SV)">Colones (SV) </option>
+                        <option value="Yenes  ">Yenes </option>
+                        <option value="Rupia">Rupia	 </option>
+                        <option value="Lempiras">Lempiras </option>
+                        <option value="Peso_MX">Peso_MX </option>
+                        <option value="Bitcoin">Bitcoin </option>
+                        <option value="=====Longitud========">=====Longitud======== </option>
+                        <option value="Metro">Metro</option>
+                        <option value="Centimetro">Centimetro</option>
+                        <option value="Pulgada">Pulgada</option>
+                        <option value="Pie">Pie</option>
+                        <option value="Varas">Varas</option>
+                        <option value="km">km</option>
+                        <option value="Millas">Millas</option>
+                    </select >
+                </div >
+                <div  class = " col " >
+                    A:
+                    <select  id = " CboA " class = " form-control " onchange="Seleccione_para()" >
+                            <option value="Dolares">Dolares</option>
+                            <option value="Colones (SV)">Colones (SV) </option>
+                            <option value="Yenes  ">Yenes </option>
+                            <option value="Rupia">Rupia	 </option>
+                            <option value="Lempiras">Lempiras </option>
+                            <option value="Peso_MX">Peso_MX </option>
+                            <option value="Bitcoin">Bitcoin </option>
+                            <option value="=====Longitud========">=====Longitud========</option>
+                            <option value="Metro">Metro</option>
+                        <option value="Centimetro">Centimetro</option>
+                        <option value="Pulgada">Pulgada</option>
+                        <option value="Pie">Pie</option>
+                        <option value="Varas">Varas</option>
+                        <option value="km">km</option>
+                        <option value="Millas">Millas</option>
+                    </select>
+
+                </div >
+            </div >
+            <div  class = " row row-cols-4 p-2 " >
+                <div  class = " col text-center " >
+                    <div class="d-flex justify-content-center"></div>
+                    <input  type = " text " required = " required " pattern = " [0-9.] {1,} " placeholder = " Cantidad " id = " txtCantidadConversor " class = " form-control " >
+                </div >
+            </div >
+            <div  class = " row row-cols-2 p-2 " >
+                <div  class = " col text-center " >
+                    <button class="btn btn-primary" id="btnCalcular">Calcular</button>
+                </div >
+                <p class="lead" id="respuesta">respuesta:</p>
+            </div >
+        </div >
+    </form >
+
+</html>
